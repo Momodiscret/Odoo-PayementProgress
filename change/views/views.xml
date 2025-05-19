@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+    <record id="view_account_move_form_apport" model="ir.ui.view">
+      <field name="name">account.move.form.apport</field>
+      <field name="model">account.move</field>
+      <field name="inherit_id" ref="account.view_move_form"/>
+      <field name="arch" type="xml">
+        <field name="invoice_date" position="after">
+          <field name="amount_paid"/>
+          <field name="apport_paye"/>
+        </field>
+      </field>
+    </record>
+  </data>
+</odoo>
+
+
+
+
+
